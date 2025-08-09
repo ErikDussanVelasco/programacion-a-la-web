@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+        header h1 {
+            margin: 1rem 0 0.5rem;
+        }
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #444;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        .skills, .technologies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tag {
+            background: #007BFF;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .project-card {
+            background: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        .project-card a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="tu-foto.jpg" alt="Foto de perfil">
+        <h1>Tu Nombre</h1>
+        <p>Desarrollador Web | Apasionado por la tecnología</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Tecnologías</h2>
+            <div class="technologies">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Python</span>
+                <span class="tag">MySQL</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <span class="tag">Trabajo en equipo</span>
+                <span class="tag">Resolución de problemas</span>
+                <span class="tag">Diseño responsivo</span>
+                <span class="tag">Bases de datos</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Proyectos</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción breve del proyecto.</p>
+                    <a href="https://github.com/usuario/proyecto1" target="_blank">Ver en GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción breve del proyecto.</p>
+                    <a href="https://github.com/usuario/proyecto2" target="_blank">Ver en GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Reconocimientos</h2>
+            <ul>
+                <li>Certificado de HTML y CSS - Platzi (2024)</li>
+                <li>Medalla al Mérito Académico - Universidad XYZ (2023)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Tu Nombre | <a href="mailto:tuemail@example.com" style="color:white;">Contacto</a></p>
+    </footer>
+
+</body>
+</html>
